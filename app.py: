@@ -8,8 +8,8 @@ app = Flask(__name__)
 def home():
 	if not session.get('logged_in'):
 		return render_template('login.html')
-		else
-		return "Hello Reader!"
+	else:
+		return 'Hello Super Reader!'
 
 @app.route('/login', methods=['POST'])
 def do_admin_login():
@@ -20,5 +20,5 @@ def do_admin_login():
 
 	if __name__ == "__main__":
 		app.secert_key = os.urandom(12)
-		app.run(debug=True,host='0.0.0.0', port=8000)
+		app.run(debug=True,host='0.0.0.0', port=5000)
 
