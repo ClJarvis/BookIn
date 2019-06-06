@@ -78,3 +78,7 @@ color: #444;
 display: block;
 margin-top: 12px;
 }
+
+.alert, .alert-warning, .alert-dismissible {
+	background: red;
+}
