@@ -27,15 +27,26 @@ You're already logged in!
 		<input type="text" class="login-field" value="" placeholder="username" name="username">
 		<label class="login-field-icon fui-user" for="login-name"></label></div>
 		<div class="control-group">
-				<input type="password" class="login-field" value="" placeholder="password" name="password">
+				<input type="password" class="login-field" value="" placeholder="password" name="password" id="Apassword">
 		<label class="login-field-icon fui-lock" for="login-pass"></label></div>
-		<input type="submit" value="Log in" class="btn btn-primary btn-large btn-block">
+		<!-- Password reveal toogle -->
+		<input type="checkbox" onclick="showPassword()"><br>Show Password
+		<input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" id="submit" onclick="validate()">
 		</div>
 	</div>
 	</div>
 	</form>
 	{% endif %}
 	{% endblock %}
+
+<script type="text/javascript">function showPassword() {
+	var x = document.getElementById("Apassword");
+	if (x.type === "password") {
+  	  x.type = "text";
+	} else {
+	  x.type = "password";
+	}
+}</script>
 	
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
