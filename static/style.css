@@ -80,9 +80,10 @@ margin-top: 12px;
 }
 
 .alert, .alert-warning, .alert-dismissible {
-	background: red;
+	background: #fdff6f;
 }
 
-input:checkbox {
-	background: red;
+.test {
+	text-align: left;
+	margin-left: -215px;
 }
