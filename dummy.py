@@ -15,7 +15,7 @@ session.add(user)
 user = User(username="python",password="python")
 session.add(user)
 
-user = User(username="jumpiness",password="python")
+user = User(username="TK421",password="52577")
 session.add(user)
 
 # commit the record the database
