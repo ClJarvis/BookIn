@@ -80,14 +80,22 @@ margin-top: 12px;
 }
 
 .alert, .alert-warning, .alert-dismissible {
-	background: #fdff6f;
+	background: #0de8e3;
 }
 
-ul {
+.instruction ul {
 	list-style-type: none;
 	align-items: left;
+	text-align: left;
 }
 
+.checkbox {
+	width: 100px;
+}
+
+.test {
+	margin-left: -100px;
+}
 
 /* ####################################### 
 https://codepen.io/comehope/pen/GBwvxw
