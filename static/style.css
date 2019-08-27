@@ -83,18 +83,23 @@ margin-top: 12px;
 	background: #0de8e3;
 }
 
-.instruction ul {
+.logout {
+	background: #0de8e3;
+	padding: 200px;
+}
+
+.instruction li {
 	list-style-type: none;
-	align-items: left;
+	align-items: center;
 	text-align: left;
 }
 
 .checkbox {
-	width: 100px;
+	width: 80px;
 }
 
 .test {
-	margin-left: -100px;
+	margin-left: -150px;
 }
 
 /* ####################################### 
