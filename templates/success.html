@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/static/style.css" type="text/css">
 
 {% block body %}
-	<div class="login-screen">
+	<div class="login-screen" id="inspire">
 		<h1>"Hello Super Reader!"</h1>
 <!-- animate drop in text BOOKS 
 	<div class="outer">
@@ -11,7 +11,24 @@
 	</div>
 
 -->
+<input type="submit" value="Hey Super Reader Click here." class="btn btn-primary btn-large btn-block" id="submit" onclick="inspireQuote();">
 		 <a href='/logout'>Logout</a>
 	</div>
+<script>
+	var quotes = [
+	"Good job!",
+	"YEAH!!",
+	"WAY TO GO",
+	"Excellent!"
+]
 
+
+function inspireQuote() {
+	var randomNumber = Math.floor(Math.random() * (quotes.length));
+	document.getElementById('inspire').innerHTML = quotes[randomNumber];
+}
+console.log(quotes[randomNumber]);
+</script>
+
+<a href='/logout' class="logout">Logout</a>
  {% endblock %}
