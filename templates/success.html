@@ -3,6 +3,7 @@
 {% block body %}
 	<div class="login-screen" id="inspire">
 		<h1>"Welcome Super Reader!"</h1>
+		Click the button for a cool quote about Reading.
 <!-- animate drop in text BOOKS 
 	<div class="outer">
 		<div class="booktext" data-text="BOOKS!">BOOKS!</div>
@@ -11,18 +12,22 @@
 	</div>
 
 -->
-<input type="submit" value="Hey Super Reader Click here." class="btn btn-primary btn-large btn-block" id="submit" onclick="inspireQuote();">
+<input type="submit" value="Click for reading quotes." class="btn btn-primary btn-large btn-block" id="submit" onclick="inspireQuote();">
 		 <a href='/logout'>Logout</a>
 	</div>
 <script>
 	var quotes = [
-	"Good job!",
-	"YEAH!!",
-	"WAY TO GO",
-	"Excellent!",
-	"Keep Reading",
-	"Love to read!",
-	"Celebrate"
+	"\“Reading without reflecting is like eating without digesting.\” \<sub>– Edmund Burke\</sub>",
+	"\“Books are a uniquely portable magic.\” \<sub>– Stephen King\</sub>",
+	"\“Reading is to the mind what exercise is to the body.\” \<sub>– Richard Steele\</sub>",
+	"\“Reading is a discount ticket to everywhere.\”  \<sub>– Mary Schmich\</sub>",
+	"\“Once you learn to read, you will be forever free\”  \<sub>– Frederick Douglass\</sub>",
+	"\"Today a reader, tomorrow a leader.\" \<sub>– Margaret Fuller\</sub>",
+	"\“There is more treasure in books than in all the pirate’s loot on Treasure Island.\” \<sub>– Walt Disney\</sub>",
+	"\“You can find magic wherever you look.  Sit back and relax all you need is a book!\” \<sub>– Dr. Seuss\</sub>",
+	"\"If you are going to get anywhere in life you have to read a lot of books.\” \<sub>– Roald Dahl\</sub>",
+	"\"No entertainment is so cheap as reading, nor any pleasure so lasting.\" \<sub>— Lady Montagu\</sub>"
+
 ]
 
 
@@ -33,5 +38,5 @@ console.log(quotes[randomNumber]);
 }
 </script>
 
-<a href='/logout' class="logout">Logout</a>
+<!--a href='/logout' class="logout">Logout</a -->
  {% endblock %}
