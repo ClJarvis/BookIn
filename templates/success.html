@@ -2,7 +2,7 @@
 
 {% block body %}
 	<div class="login-screen" id="inspire">
-		<h1>"Hello Super Reader!"</h1>
+		<h1>"Welcome Super Reader!"</h1>
 <!-- animate drop in text BOOKS 
 	<div class="outer">
 		<div class="booktext" data-text="BOOKS!">BOOKS!</div>
@@ -19,15 +19,18 @@
 	"Good job!",
 	"YEAH!!",
 	"WAY TO GO",
-	"Excellent!"
+	"Excellent!",
+	"Keep Reading",
+	"Love to read!",
+	"Celebrate"
 ]
 
 
 function inspireQuote() {
 	var randomNumber = Math.floor(Math.random() * (quotes.length));
 	document.getElementById('inspire').innerHTML = quotes[randomNumber];
-}
 console.log(quotes[randomNumber]);
+}
 </script>
 
 <a href='/logout' class="logout">Logout</a>

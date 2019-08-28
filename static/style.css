@@ -85,7 +85,8 @@ margin-top: 12px;
 
 .logout {
 	background: #0de8e3;
-	padding: 200px;
+    padding: 0 20px;
+    border-radius: 6px;
 }
 
 .instruction li {
