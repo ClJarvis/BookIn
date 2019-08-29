@@ -14,7 +14,7 @@
 
 -->
 <input type="submit" value="Click for reading quotes." class="btn btn-primary btn-large btn-block" id="submit" onclick="inspireQuote();">
-		 <a href='/logout'>Logout</a>
+		 <a href='/logout' class="logout">Logout</a>
 	</div>
 <script>
 	var quotes = [
@@ -34,10 +34,11 @@
 
 function inspireQuote() {
 	var randomNumber = Math.floor(Math.random() * (quotes.length));
-	document.getElementById('inspire').innerHTML = quotes[randomNumber];
+	document.getElementById('inspire').innerHTML = quotes[randomNumber]; 
+//	 + " " + "Back";
 console.log(quotes[randomNumber]);
 }
 </script>
 
-<a href='/logout' class="logout">Logout</a>
+
  {% endblock %}

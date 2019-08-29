@@ -18,6 +18,7 @@ You're already logged in!
 
 	{% else %}
 	<form action="/login" method="POST">
+	<h1 id="welcome">"Welcome to the Book Nook!"</h1>
 	<div class="login-screen">
 		<div class="app-title">
 			<h1>Student Login</h1>
@@ -30,16 +31,15 @@ You're already logged in!
 				<input type="password" class="login-field" value="" placeholder="password" name="password" id="Apassword">
 		<label class="login-field-icon fui-lock" for="login-pass"></label></div>
 		<!-- Password reveal toogle -->
-		<input type="checkbox" onclick="showPassword()"><span class='test'>Show Password</span>
-		<input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" id="submit" onclick="validate(); inspireQuote();">
+		<input type="checkbox" class="checkbox" onclick="showPassword()"><span class='showPassword'>Show Password</span>
+		<input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" id="submit" onclick="validate();">
 		<div class="app-title">
 			<h1>Instructions</h1>
-		<div class="instruction">
+		
 				Use the following to login to BookedIn.<br>
-				<b>username:</b> TK421
-				<b>password:</b> 52577<br>
-				Then click Log In.<br>
-		</div>
+				<b>Username:</b> TK421
+				<b>Password:</b> 52577<br>
+				<!--Then click Log In.<br-->
 		</div>
 		
 	</div>

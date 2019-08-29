@@ -89,19 +89,19 @@ margin-top: 12px;
     border-radius: 6px;
 }
 
-.instruction {
+.instruction  li{
 	list-style-type: none;
 	align-items: center;
 	text-align: left;
-	border: solid 2px #0de8e3;
+	border: solid 2px #4d42a5;
 }
 
 .checkbox {
-	width: 80px;
+	width: 250px;
 }
 
-.test {
-	margin-left: -150px;
+.showPass {
+	margin-left: -200px;
 }
 
 #welcome {
