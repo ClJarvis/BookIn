@@ -89,10 +89,11 @@ margin-top: 12px;
     border-radius: 6px;
 }
 
-.instruction li {
+.instruction {
 	list-style-type: none;
 	align-items: center;
 	text-align: left;
+	border: solid 2px #0de8e3;
 }
 
 .checkbox {
@@ -101,6 +102,10 @@ margin-top: 12px;
 
 .test {
 	margin-left: -150px;
+}
+
+#welcome {
+	color: white;
 }
 
 /* ####################################### 
