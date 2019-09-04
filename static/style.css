@@ -22,6 +22,17 @@ border-radius: 5px;
 border:inset 6px black;
 }
 
+.quote-screen {
+background-color: #FFF;
+padding: 20px;
+border-radius: 5px;
+border:inset 6px black;
+margin-top: 20px;
+display: none;
+}
+
+
+
 .app-title {
 text-align: center;
 color: #4a1167;

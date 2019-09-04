@@ -2,7 +2,7 @@
 
 {% block body %}
 <h1 id="welcome">"Welcome to the Book Nook!"</h1>
-	<div class="login-screen" id="inspire">
+	<div class="login-screen" >
 		<h1>"Hello Super Reader!"</h1>
 		Click the button for a cool quote about Reading.
 <!-- animate drop in text BOOKS 
@@ -16,6 +16,14 @@
 <input type="submit" value="Click for reading quotes." class="btn btn-primary btn-large btn-block" id="submit" onclick="inspireQuote();">
 		 <a href='/logout' class="logout">Logout</a>
 	</div>
+	<div height='20px'>
+	</div>
+
+	<div class="login-screen " id="inspire" display="none">
+		<!-- Quote displays Here -->
+		<h1>Why you should read</h1>
+	</div>
+
 <script>
 	var quotes = [
 	"\“Reading without reflecting is like eating without digesting.\” \<sub>– Edmund Burke\</sub>",
@@ -34,7 +42,9 @@
 
 function inspireQuote() {
 	var randomNumber = Math.floor(Math.random() * (quotes.length));
-	document.getElementById('inspire').innerHTML = quotes[randomNumber]; 
+	document.getElementById('inspire').innerHTML = quotes[randomNumber];
+	var x = document.getElementById("inspire").style.display = "block";
+	
 //	 + " " + "Back";
 console.log(quotes[randomNumber]);
 }
