@@ -24,6 +24,7 @@ border:inset 6px black;
 
 .quote-screen {
 background-color: #f06c30;
+color: white;
 font-size: 1.25em;
 padding: 20px;
 border-radius: 5px;
@@ -99,11 +100,12 @@ margin-top: 12px;
 .logout {
 	background: #f06c30;
     padding: 4px 20px;
+    border: solid 2px #000;
     border-radius: 10px;
     color: #fff;
 }
 
-.instruction  li{
+.instruction  li {
 	list-style-type: none;
 	align-items: center;
 	text-align: left;
