@@ -1,0 +1,1 @@
+web: gunicorn bookIn.wsgi --log-file - --log-level debug
