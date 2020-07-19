@@ -42,8 +42,8 @@ if __name__ == "__main__":
 @app.route('/test')
 def test():
 
-	POST_USERNAME = '123452020'
-	POST_PASSWORD = '1/1/2020'
+	POST_USERNAME = 'TK421'
+	POST_PASSWORD = '52577'
 
 	Session = sessionmaker(bind=engine)
 	s = Session()
